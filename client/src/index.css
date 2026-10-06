@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-crimson: #7A1B28;
+    --brand-gold: #C59A45;
+    --canvas-cream: #FDFBF7;
+  }
+
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: #FDFBF7;
+    color: #181310;
+    overflow-x: hidden;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F7F3EC;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C8B89E;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #AA8032;
+  }
+}
+
+/* Luxury card and ribbon effects */
+.gold-foil-border {
+  border: 1px solid rgba(197, 154, 69, 0.4);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #9E7422 0%, #D4B055 50%, #9E7422 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.crimson-gradient-bg {
+  background: linear-gradient(135deg, #7A1B28 0%, #5A121C 100%);
+}
+
+.paper-texture {
+  background-color: #FDFBF7;
+  background-image: radial-gradient(#E8D9B0 0.5px, transparent 0.5px);
+  background-size: 16px 16px;
+}
+
+/* Touch and button micro-interactions */
+.active-press {
+  transform: scale(0.98);
+  transition: transform 0.1s ease-in-out;
+}
+
+/* Hide scrollbar for clean horizontal swipe on mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "kumar-cards-digital-showroom",
+  "version": "1.0.0",
+  "description": "Kumar Cards & Lifafe - V1 Digital Product Catalog & QR-Based Customer Showroom",
+  "scripts": {
+    "dev:client": "npm --prefix client run dev",
+    "dev:server": "npm --prefix server run dev",
+    "build:client": "npm --prefix client run build",
+    "start:server": "npm --prefix server start"
+  }
+}

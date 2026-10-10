@@ -1,7 +1,7 @@
 {
-  "name": "kumar-cards-server",
+  "name": "kumar-printers-and-cards-server",
   "version": "1.0.0",
-  "description": "Kumar Cards & Lifafe V1 Backend REST API",
+  "description": "Kumar Printers and Cards V1 Backend REST API",
   "type": "module",
   "main": "app.js",
   "scripts": {

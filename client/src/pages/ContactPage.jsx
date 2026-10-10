@@ -4,7 +4,7 @@ import { BUSINESS_CONFIG } from '../config/business';
 
 export default function ContactPage() {
   const [copiedUrl, setCopiedUrl] = useState(false);
-  const catalogUrl = typeof window !== 'undefined' ? `${window.location.origin}/catalog` : 'https://kumarcards.example.com/catalog';
+  const catalogUrl = typeof window !== 'undefined' ? `${window.location.origin}/catalog` : 'https://kumarprintersandcards.example.com/catalog';
 
   const qrImageUrl = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent(catalogUrl)}&color=7A1B28&bgcolor=FDFBF7`;
 
@@ -118,7 +118,7 @@ export default function ContactPage() {
             <div className="bg-white rounded-2xl p-2 border border-cream-200/90 shadow-card overflow-hidden">
               <div className="aspect-[16/9] w-full rounded-xl overflow-hidden bg-cream-100">
                 <iframe
-                  title="Kumar Cards Showroom Map"
+                  title="Kumar Printers and Cards Showroom Map"
                   src={BUSINESS_CONFIG.googleMapsEmbedUrl}
                   width="100%"
                   height="100%"
@@ -159,7 +159,7 @@ export default function ContactPage() {
               <div className="bg-cream-50 p-4 rounded-2xl border border-cream-200 inline-block shadow-inner">
                 <img
                   src={qrImageUrl}
-                  alt="Scan QR code to open Kumar Cards digital catalog"
+                  alt="Scan QR code to open Kumar Printers and Cards digital catalog"
                   className="w-48 h-48 sm:w-56 sm:h-56 mx-auto object-contain rounded-lg"
                 />
               </div>

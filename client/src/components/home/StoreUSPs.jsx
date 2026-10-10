@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layers, ShieldCheck, Sparkles, Tag, Users } from 'lucide-react';
+import { BUSINESS_CONFIG } from '../../config/business';
 
 export default function StoreUSPs() {
   const usps = [
@@ -34,7 +35,7 @@ export default function StoreUSPs() {
             Showroom Excellence
           </span>
           <h2 className="font-serif font-bold text-2xl sm:text-3xl text-ink-900 mt-1">
-            Why Shop At Kumar Cards & Lifafe
+            Why Shop At {BUSINESS_CONFIG.name}
           </h2>
           <p className="text-xs sm:text-sm text-ink-600 mt-2">
             Trusted wedding stationery craftsmanship serving families, event planners, and retail shoppers.

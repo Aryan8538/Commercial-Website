@@ -80,7 +80,7 @@ export default function HeroBanner() {
               <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/90 relative">
                 <img
                   src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=900&auto=format&fit=crop&q=85"
-                  alt="Kumar Cards & Lifafe Showroom Showcase"
+                  alt="Kumar Printers and Cards Showroom Showcase"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-950/70 via-transparent to-transparent flex items-end p-5">

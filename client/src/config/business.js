@@ -7,8 +7,8 @@
 
 export const BUSINESS_CONFIG = {
   // Business branding
-  name: "Kumar Cards & Lifafe", // [CLIENT INPUT REQUIRED: Legal/Display Name]
-  shortName: "Kumar Cards",
+  name: "Kumar Printers and Cards", // [CLIENT INPUT REQUIRED: Legal/Display Name]
+  shortName: "Kumar Printers and Cards",
   tagline: "Premier Wedding Stationery & Shagun Lifafe Showroom",
   subTagline: "Handcrafted Shagun Envelopes, Designer Lifafe & Bespoke Wedding Invitation Cards",
   foundedYear: "1998",
@@ -17,7 +17,7 @@ export const BUSINESS_CONFIG = {
   phone: "+91 98765 43210", // [CLIENT INPUT REQUIRED: Verified contact number]
   phoneRaw: "+919876543210", // Raw phone for direct tel: links
   whatsapp: "919876543210", // [CLIENT INPUT REQUIRED: WhatsApp Business number without '+' or spaces]
-  email: "orders@kumarcards.example.com", // [CLIENT INPUT REQUIRED: Verified email]
+  email: "orders@kumarprintersandcards.example.com", // [CLIENT INPUT REQUIRED: Verified email]
   
   // Physical store location
   address: {
@@ -45,8 +45,8 @@ export const BUSINESS_CONFIG = {
   
   // Social links
   social: {
-    instagram: "https://instagram.com/kumarcards", // [CLIENT INPUT REQUIRED]
-    facebook: "https://facebook.com/kumarcards" // [CLIENT INPUT REQUIRED]
+    instagram: "https://instagram.com/kumarprintersandcards", // [CLIENT INPUT REQUIRED]
+    facebook: "https://facebook.com/kumarprintersandcards" // [CLIENT INPUT REQUIRED]
   },
   
   // Permanent QR target path
@@ -55,8 +55,8 @@ export const BUSINESS_CONFIG = {
   // WhatsApp generator
   createWhatsAppLink: (product) => {
     const text = product
-      ? `Hello Kumar Cards, I found *${product.name}* (Code: *${product.id}*) on your digital catalog.\n\nPlease share price, minimum order quantity, and color availability.\nCatalog link: ${window.location.origin}/product/${product.slug}`
-      : `Hello Kumar Cards, I am browsing your digital showroom and would like to inquire about your Shagun Lifafe and Wedding Card collections.`;
+      ? `Hello Kumar Printers and Cards, I found *${product.name}* (Code: *${product.id}*) on your digital catalog.\n\nPlease share price, minimum order quantity, and color availability.\nCatalog link: ${window.location.origin}/product/${product.slug}`
+      : `Hello Kumar Printers and Cards, I am browsing your digital showroom and would like to inquire about your Shagun Lifafe and Wedding Card collections.`;
     return `https://wa.me/${BUSINESS_CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
   }
 };

@@ -1,5 +1,5 @@
 /**
- * SEED CATALOG DATA - KUMAR CARDS / KUMAR LIFAFE V1
+ * SEED CATALOG DATA - KUMAR PRINTERS AND CARDS V1
  * 
  * NOTE: These are realistic placeholder development products.
  * They represent typical Indian wedding lifafe, gift envelopes, and invitation cards

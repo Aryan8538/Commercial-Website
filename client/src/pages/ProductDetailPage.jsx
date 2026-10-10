@@ -39,8 +39,8 @@ export default function ProductDetailPage() {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: `${product.name} - Kumar Cards Showroom`,
-        text: `Check out ${product.name} (Code: ${product.id}) on Kumar Cards digital catalog`,
+        title: `${product.name} - Kumar Printers and Cards Showroom`,
+        text: `Check out ${product.name} (Code: ${product.id}) on Kumar Printers and Cards digital catalog`,
         url: window.location.href,
       }).catch(() => {});
     } else {

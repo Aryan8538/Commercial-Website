@@ -101,7 +101,7 @@ export default function LocationSection() {
             <div className="rounded-3xl overflow-hidden border border-cream-300/80 shadow-card bg-white p-2">
               <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden bg-cream-200">
                 <iframe
-                  title="Kumar Cards Showroom Location"
+                  title="Kumar Printers and Cards Showroom Location"
                   src={BUSINESS_CONFIG.googleMapsEmbedUrl}
                   width="100%"
                   height="100%"

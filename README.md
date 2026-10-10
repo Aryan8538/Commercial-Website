@@ -1,4 +1,4 @@
-# Kumar Cards & Lifafe — Digital Product Catalog & QR-Based Customer Showroom (V1)
+# Kumar Printers and Cards — Digital Product Catalog & QR-Based Customer Showroom (V1)
 
 A luxury, mobile-first digital product showroom and digital catalog built for physical stationery and wedding envelope retail stores. 
 
@@ -24,7 +24,7 @@ Customers visiting the physical shop scan a counter QR code using their smartpho
 
 4. **Zero-Friction In-Store Conversion**:
    - Dynamic WhatsApp inquiry links that prefill the exact product title and SKU code:
-     `"Hello Kumar Cards, I found Royal Crimson Velvet Shagun Lifafa (Code: SL-001) on your digital catalog..."`
+     `"Hello Kumar Printers and Cards, I found Royal Crimson Velvet Shagun Lifafa (Code: SL-001) on your digital catalog..."`
    - Direct telephone dialer button for immediate counter inquiries.
 
 5. **Dual-Mode Data Resilience**:
@@ -101,7 +101,7 @@ When the business owner provides verified details, edit:
 - `server/config/business.js`
 
 Fields to update:
-- `name`: Official store name (e.g. "Kumar Cards" or "Kumar Lifafe")
+- `name`: Official store name (e.g. "Kumar Printers and Cards")
 - `phone`: Physical store contact number
 - `whatsapp`: WhatsApp Business number (without `+` or spaces)
 - `address`: Shop number, market name, street, city, and pincode

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kumarcards.example.com/sitemap.xml
+Sitemap: https://kumarprintersandcards.example.com/sitemap.xml

@@ -24,7 +24,7 @@ app.get('/health', (req, res) => {
   res.json({
     status: 'online',
     timestamp: new Date().toISOString(),
-    service: 'Kumar Cards & Lifafe API V1'
+    service: 'Kumar Printers and Cards API V1'
   });
 });
 
@@ -42,8 +42,8 @@ app.use((err, req, res, next) => {
 // Only listen when executed directly
 if (process.env.NODE_ENV !== 'test') {
   app.listen(PORT, () => {
-    console.log(`[Kumar Cards API] Server running at http://localhost:${PORT}`);
-    console.log(`[Kumar Cards API] Endpoints: /api/products, /api/categories, /api/config`);
+    console.log(`[Kumar Printers and Cards API] Server running at http://localhost:${PORT}`);
+    console.log(`[Kumar Printers and Cards API] Endpoints: /api/products, /api/categories, /api/config`);
   });
 }
 

@@ -46,15 +46,26 @@ export default function LocationSection() {
               </div>
 
               {/* Contact Options */}
-              <div className="grid grid-cols-2 gap-3 pt-1">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
                 <a
                   href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
                   className="p-3 bg-white rounded-xl border border-cream-200 hover:border-crimson-700 flex items-center gap-2.5 transition-colors"
                 >
                   <Phone className="w-4 h-4 text-crimson-800" />
                   <div>
-                    <p className="text-[11px] text-ink-400 uppercase font-semibold">Call Directly</p>
+                    <p className="text-[11px] text-ink-400 uppercase font-semibold">Call Primary</p>
                     <p className="font-bold text-ink-900 text-xs truncate">{BUSINESS_CONFIG.phone}</p>
+                  </div>
+                </a>
+
+                <a
+                  href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
+                  className="p-3 bg-white rounded-xl border border-cream-200 hover:border-crimson-700 flex items-center gap-2.5 transition-colors"
+                >
+                  <Phone className="w-4 h-4 text-crimson-800" />
+                  <div>
+                    <p className="text-[11px] text-ink-400 uppercase font-semibold">Call Alternate</p>
+                    <p className="font-bold text-ink-900 text-xs truncate">{BUSINESS_CONFIG.phoneSecondary}</p>
                   </div>
                 </a>
 

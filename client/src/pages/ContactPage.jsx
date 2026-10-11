@@ -79,9 +79,19 @@ export default function ContactPage() {
                     <a
                       href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
                       className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-ink-900 bg-cream-50 hover:bg-cream-100 border border-cream-200 transition-colors"
+                      title="Call primary contact"
                     >
                       <Phone className="w-3.5 h-3.5 text-crimson-800" />
                       <span>{BUSINESS_CONFIG.phone}</span>
+                    </a>
+
+                    <a
+                      href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-ink-900 bg-cream-50 hover:bg-cream-100 border border-cream-200 transition-colors"
+                      title="Call alternate contact"
+                    >
+                      <Phone className="w-3.5 h-3.5 text-crimson-800" />
+                      <span>{BUSINESS_CONFIG.phoneSecondary}</span>
                     </a>
 
                     <a

@@ -14,10 +14,16 @@ export const BUSINESS_CONFIG = {
   foundedYear: "1998",
   
   // Contact numbers
-  phone: "+91 98765 43210", // [CLIENT INPUT REQUIRED: Verified contact number]
-  phoneRaw: "+919876543210", // Raw phone for direct tel: links
-  whatsapp: "919876543210", // [CLIENT INPUT REQUIRED: WhatsApp Business number without '+' or spaces]
-  email: "orders@kumarprintersandcards.example.com", // [CLIENT INPUT REQUIRED: Verified email]
+  phone: "+91 93582 06242",
+  phoneRaw: "+919358206242",
+  phoneSecondary: "+91 92594 41370",
+  phoneSecondaryRaw: "+919259441370",
+  phones: [
+    { display: "+91 93582 06242", raw: "+919358206242" },
+    { display: "+91 92594 41370", raw: "+919259441370" }
+  ],
+  whatsapp: "919358206242",
+  email: "orders@kumarprintersandcards.example.com",
   
   // Physical store location
   address: {

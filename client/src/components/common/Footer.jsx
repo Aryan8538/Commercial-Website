@@ -96,11 +96,17 @@ export default function Footer() {
                 <MapPin className="w-4 h-4 text-crimson-400 shrink-0 mt-0.5" />
                 <span>{BUSINESS_CONFIG.address.fullAddress}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 text-gold-400 shrink-0" />
-                <a href={`tel:${BUSINESS_CONFIG.phoneRaw}`} className="hover:text-gold-300 underline underline-offset-2">
-                  {BUSINESS_CONFIG.phone}
-                </a>
+              <div className="flex items-start gap-2">
+                <Phone className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
+                <div className="flex flex-wrap gap-x-2 gap-y-0.5">
+                  <a href={`tel:${BUSINESS_CONFIG.phoneRaw}`} className="hover:text-gold-300 underline underline-offset-2">
+                    {BUSINESS_CONFIG.phone}
+                  </a>
+                  <span className="text-cream-500">|</span>
+                  <a href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`} className="hover:text-gold-300 underline underline-offset-2">
+                    {BUSINESS_CONFIG.phoneSecondary}
+                  </a>
+                </div>
               </div>
             </div>
 

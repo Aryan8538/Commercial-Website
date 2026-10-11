@@ -4,7 +4,7 @@ import SearchBar from '../components/catalog/SearchBar';
 import QuickFilterPills from '../components/catalog/QuickFilterPills';
 import ProductGrid from '../components/catalog/ProductGrid';
 import FilterDrawer from '../components/catalog/FilterDrawer';
-import { QrCode, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 
 export default function CatalogPage() {
   const {
@@ -34,8 +34,8 @@ export default function CatalogPage() {
           </div>
 
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-white border border-cream-200 text-xs text-ink-600 shadow-sm self-start md:self-auto">
-            <QrCode className="w-4 h-4 text-gold-600 shrink-0" />
-            <span>In-Store QR Catalog — Fast Instant Discovery</span>
+            <Sparkles className="w-3.5 h-3.5 text-gold-600 shrink-0" />
+            <span>Curated Wedding Stationery Collection</span>
           </div>
         </div>
 

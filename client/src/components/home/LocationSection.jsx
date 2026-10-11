@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, MessageCircle, Clock, ExternalLink, QrCode } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Clock, ExternalLink } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 
 export default function LocationSection() {
@@ -89,8 +89,7 @@ export default function LocationSection() {
                 to="/contact"
                 className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-ink-800 bg-white hover:bg-cream-50 border border-cream-300 transition-colors"
               >
-                <QrCode className="w-4 h-4 text-gold-600" />
-                <span>Showroom QR Code</span>
+                <span>Store & Contact Info</span>
               </Link>
             </div>
 

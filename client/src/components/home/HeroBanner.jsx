@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, MessageCircle, QrCode, Sparkles } from 'lucide-react';
+import { ArrowRight, MessageCircle, Sparkles } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 
 export default function HeroBanner() {
@@ -19,7 +19,7 @@ export default function HeroBanner() {
             {/* Top Badges */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-gold-300 shadow-sm text-xs font-semibold text-crimson-900">
               <Sparkles className="w-3.5 h-3.5 text-gold-600" />
-              <span>In-Store QR Digital Showroom</span>
+              <span>Handcrafted Shagun Lifafe & Stationery</span>
             </div>
 
             {/* Main Headline */}
@@ -95,17 +95,17 @@ export default function HeroBanner() {
                 </div>
               </div>
 
-              {/* Floating In-Store Counter Badge */}
+              {/* Floating Showroom Quality Badge */}
               <div className="absolute -bottom-4 -left-4 sm:-bottom-5 sm:-left-5 bg-white p-3 sm:p-4 rounded-2xl shadow-xl border border-cream-200 flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-gold-50 border border-gold-200 flex items-center justify-center text-gold-700">
-                  <QrCode className="w-5 h-5" />
+                  <Sparkles className="w-5 h-5" />
                 </div>
                 <div>
                   <p className="text-[11px] font-bold text-crimson-900 uppercase">
-                    Scan At Counter
+                    Showroom Collection
                   </p>
                   <p className="text-xs text-ink-600 font-medium">
-                    200+ Designs on Your Phone
+                    200+ Handcrafted Designs
                   </p>
                 </div>
               </div>

@@ -49,9 +49,6 @@ export const BUSINESS_CONFIG = {
     facebook: "https://facebook.com/kumarprintersandcards" // [CLIENT INPUT REQUIRED]
   },
   
-  // Permanent QR target path
-  qrTargetUrl: "/catalog",
-  
   // WhatsApp generator
   createWhatsAppLink: (product) => {
     const text = product

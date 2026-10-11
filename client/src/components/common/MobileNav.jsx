@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { X, Phone, MessageCircle, MapPin, Clock, QrCode, Sparkles } from 'lucide-react';
+import { X, Phone, MessageCircle, MapPin, Clock, Sparkles } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 
 export default function MobileNav({ isOpen, onClose, navLinks }) {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, MessageCircle, Clock, ExternalLink, QrCode } from 'lucide-react';
+import { MapPin, Phone, MessageCircle, Clock, ExternalLink } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 
 export default function Footer() {
@@ -24,10 +24,6 @@ export default function Footer() {
             <p className="text-xs sm:text-sm text-cream-200/80 leading-relaxed">
               {BUSINESS_CONFIG.subTagline}
             </p>
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-ink-800/80 border border-gold-500/20 text-xs text-gold-400">
-              <QrCode className="w-4 h-4 text-gold-400" />
-              <span>In-Store QR Digital Showroom</span>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -127,7 +123,7 @@ export default function Footer() {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-cream-400/70">
           <p>© {new Date().getFullYear()} {BUSINESS_CONFIG.name}. All Rights Reserved.</p>
           <p className="text-[11px] text-cream-500/60">
-            Digital Showroom V1 — Designed for In-Store QR Shoppers & Inquiry
+            Digital Showroom & Catalog — Luxury Shagun Lifafe & Wedding Stationery
           </p>
         </div>
 

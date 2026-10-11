@@ -48,14 +48,11 @@ export const BUSINESS_CONFIG = {
     facebook: "https://facebook.com/kumarprintersandcards" // [CLIENT INPUT REQUIRED]
   },
   
-  // QR Code permanent target
-  qrTargetUrl: "/catalog", // Points to the permanent digital catalog URL
-  
   // Helper for generating dynamic WhatsApp prefilled inquiry message
   createWhatsAppLink: (product) => {
     const text = product
       ? `Hello Kumar Printers and Cards, I found *${product.name}* (SKU: *${product.id}*) on your digital showroom. I would like to inquire about pricing, minimum quantity, and available color options.`
-      : `Hello Kumar Printers and Cards, I scanned your in-store QR code and would like to inquire about your Shagun Lifafe and Wedding Card collections.`;
+      : `Hello Kumar Printers and Cards, I am browsing your digital showroom and would like to inquire about your Shagun Lifafe and Wedding Card collections.`;
     return `https://wa.me/${BUSINESS_CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
   }
 };

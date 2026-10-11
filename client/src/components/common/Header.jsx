@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Phone, MessageCircle, Menu, X, Sparkles, QrCode } from 'lucide-react';
+import { Phone, MessageCircle, Menu, X, Sparkles } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 import MobileNav from './MobileNav';
 
@@ -93,16 +93,6 @@ export default function Header() {
                 <MessageCircle className="w-3.5 h-3.5 fill-current" />
                 <span className="hidden xs:inline">WhatsApp</span>
               </a>
-
-              {/* QR Badge Quick Link */}
-              <Link
-                to="/contact"
-                className="hidden lg:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-md text-xs text-ink-600 hover:text-crimson-800 border border-dashed border-cream-300 hover:border-gold-400 transition-colors"
-                title="View In-Store QR Code"
-              >
-                <QrCode className="w-3.5 h-3.5 text-gold-600" />
-                <span>In-Store QR</span>
-              </Link>
 
               {/* Mobile Menu Hamburger */}
               <button

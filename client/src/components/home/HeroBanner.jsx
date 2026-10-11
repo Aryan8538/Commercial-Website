@@ -77,19 +77,19 @@ export default function HeroBanner() {
             <div className="relative mx-auto max-w-sm sm:max-w-md lg:max-w-none">
               
               {/* Main Visual Display */}
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/90 relative">
+              <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border-4 border-white/90 relative bg-cream-100/90 flex items-center justify-center p-3">
                 <img
-                  src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=900&auto=format&fit=crop&q=85"
-                  alt="Kumar Printers and Cards Showroom Showcase"
-                  className="w-full h-full object-cover"
+                  src="/images/lifafe/royal-elephant-crimson-mandap-lifafa.jpg"
+                  alt="Kumar Printers and Cards Showroom Showcase - Royal Shagun Lifafa"
+                  className="w-full h-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/70 via-transparent to-transparent flex items-end p-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-transparent to-transparent flex items-end p-5 pointer-events-none">
                   <div className="text-white">
                     <p className="text-xs uppercase tracking-wider text-gold-300 font-semibold">
                       Featured Collection
                     </p>
                     <p className="font-serif font-bold text-base sm:text-lg">
-                      Royal Velvet & Laser-Cut Craft
+                      Handcrafted Royal Shagun Lifafe
                     </p>
                   </div>
                 </div>

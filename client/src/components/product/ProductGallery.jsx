@@ -18,11 +18,11 @@ export default function ProductGallery({ images = [], productName = '', productI
   return (
     <div className="space-y-3">
       {/* Main Image Display */}
-      <div className="relative aspect-[4/3] sm:aspect-square rounded-2xl overflow-hidden bg-cream-100 border border-cream-200 shadow-sm group">
+      <div className="relative aspect-[4/3] sm:aspect-square rounded-2xl overflow-hidden bg-cream-100/80 border border-cream-200 shadow-sm group p-3 sm:p-4 flex items-center justify-center">
         <img
           src={currentImage}
           alt={`${productName} - Image ${activeImageIndex + 1}`}
-          className="w-full h-full object-cover object-center transition-all duration-300"
+          className="w-full h-full object-contain transition-all duration-300"
         />
 
         {/* Lightbox Trigger */}
@@ -69,7 +69,7 @@ export default function ProductGallery({ images = [], productName = '', productI
                 key={idx}
                 type="button"
                 onClick={() => setActiveImageIndex(idx)}
-                className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 border-2 transition-all ${
+                className={`relative w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden shrink-0 border-2 bg-cream-100/80 p-1 flex items-center justify-center transition-all ${
                   isSelected
                     ? 'border-crimson-800 ring-2 ring-gold-400/50 shadow-sm'
                     : 'border-cream-200 opacity-70 hover:opacity-100 hover:border-gold-300'
@@ -78,7 +78,7 @@ export default function ProductGallery({ images = [], productName = '', productI
                 <img
                   src={img}
                   alt={`${productName} thumbnail ${idx + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </button>
             );

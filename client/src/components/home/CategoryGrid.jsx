@@ -36,12 +36,12 @@ export default function CategoryGrid() {
               className="group relative rounded-2xl overflow-hidden bg-white border border-cream-200/80 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col"
             >
               {/* Category Image */}
-              <div className="aspect-[4/3] overflow-hidden bg-cream-100 relative">
+              <div className="aspect-[4/3] overflow-hidden bg-cream-100/90 relative flex items-center justify-center p-2">
                 <img
                   src={cat.image}
                   alt={cat.name}
                   loading="lazy"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-950/70 via-ink-950/20 to-transparent" />
                 <span className="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-md bg-white/90 backdrop-blur-sm text-[10px] font-bold text-ink-800 shadow-sm">

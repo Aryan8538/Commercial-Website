@@ -30,12 +30,12 @@ export default function CategoriesPage() {
               to={`/catalog?category=${cat.id}`}
               className="group bg-white rounded-2xl overflow-hidden border border-cream-200/90 shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col"
             >
-              <div className="aspect-[16/10] overflow-hidden bg-cream-100 relative">
+              <div className="aspect-[16/10] overflow-hidden bg-cream-100/90 relative flex items-center justify-center p-2">
                 <img
                   src={cat.image}
                   alt={cat.name}
                   loading="lazy"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-transparent to-transparent flex items-end p-5">
                   <span className="px-3 py-1 rounded-lg bg-gold-400/90 text-crimson-950 text-xs font-bold uppercase tracking-wider shadow-sm">

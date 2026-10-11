@@ -15,6 +15,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
+app.use(express.static('public'));
 
 // API Routes
 app.use('/api', productRoutes);

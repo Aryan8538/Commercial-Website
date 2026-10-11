@@ -13,13 +13,13 @@ export default function ProductCard({ product }) {
       {/* Top Image Container */}
       <Link
         to={`/product/${product.slug}`}
-        className="block relative aspect-[4/3] sm:aspect-[4/3] overflow-hidden bg-cream-100"
+        className="block relative aspect-[4/3] sm:aspect-[4/3] overflow-hidden bg-cream-100/80 p-2.5 flex items-center justify-center"
       >
         <img
           src={product.thumbnail || product.images[0]}
           alt={product.name}
           loading="lazy"
-          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 ease-out"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out"
         />
 
         {/* Featured Ribbon Badge */}

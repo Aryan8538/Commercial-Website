@@ -110,7 +110,7 @@ export default function ContactPage() {
                     Find Us on Google Maps
                   </h3>
                   <p className="text-xs text-ink-500 mt-0.5">
-                    Central Wholesale Market, Chandni Chowk / Nai Sarak
+                    Near Chodhary Namkeen, Opposite Gandhi Ganj, Gole Market, Hapur
                   </p>
                 </div>
                 <a
@@ -126,7 +126,7 @@ export default function ContactPage() {
 
               <div className="aspect-[4/3] w-full rounded-xl overflow-hidden bg-cream-100 border border-cream-200">
                 <iframe
-                  title="Kumar Printers and Cards Showroom Map"
+                  title="Kumar Printer's and Designers Showroom Map"
                   src={BUSINESS_CONFIG.googleMapsEmbedUrl}
                   width="100%"
                   height="100%"
@@ -138,8 +138,8 @@ export default function ContactPage() {
               </div>
 
               <div className="flex items-center justify-between pt-1 text-xs text-ink-600">
-                <span>Landmark: Radha Govind Market</span>
-                <span className="font-medium text-ink-900">Delhi - 110006</span>
+                <span>Landmark: Near Chodhary Namkeen, Opp. Gandhi Ganj</span>
+                <span className="font-medium text-ink-900">Hapur - 245101</span>
               </div>
             </div>
           </div>

@@ -21,15 +21,16 @@ export const BUSINESS_CONFIG = {
   
   // Physical store location
   address: {
-    shopNo: "Shop No. 14, Ground Floor", // [CLIENT INPUT REQUIRED]
-    market: "Radha Govind Market", // [CLIENT INPUT REQUIRED]
-    street: "Nai Sarak / Chawri Bazar Road", // [CLIENT INPUT REQUIRED]
-    area: "Central Wholesale Paper Market", // [CLIENT INPUT REQUIRED]
-    city: "Delhi", // [CLIENT INPUT REQUIRED]
-    pincode: "110006", // [CLIENT INPUT REQUIRED]
-    state: "Delhi",
+    shopNo: "Kumar Printer's and Designers",
+    landmark: "Near Chodhary Namkeen, Opposite Gandhi Ganj",
+    market: "Gole Market",
+    area: "Gole Market",
+    city: "Hapur",
+    region: "Hapur NCR",
+    state: "Uttar Pradesh",
+    pincode: "245101",
     country: "India",
-    fullAddress: "Shop No. 14, Radha Govind Market, Nai Sarak, Central Wholesale Market, Delhi - 110006 [CLIENT INPUT REQUIRED]"
+    fullAddress: "Kumar Printer's and Designers, Near Chodhary Namkeen, Opposite Gandhi Ganj, Gole Market, Hapur NCR, Uttar Pradesh - 245101"
   },
   
   // Working hours
@@ -40,8 +41,8 @@ export const BUSINESS_CONFIG = {
   },
   
   // Navigation & Maps
-  googleMapsUrl: "https://maps.google.com/?q=Kumar+Printers+Delhi", // [CLIENT INPUT REQUIRED]
-  googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14005.15858055005!2d77.2249!3d28.6507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd17c91db0ad%3A0x6a0a23277cb54c51!2sChawri%20Bazar%2C%20Chandni%20Chowk%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000",
+  googleMapsUrl: "https://maps.app.goo.gl/Mv46NpJwZksGBLAP7",
+  googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.718421438163!2d77.7779902!3d28.7279599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c85aed3a0be05%3A0xd05e7190bdf77b75!2sKumar%20Printer's%20and%20Designers!5e0!3m2!1sen!2sin!4v1710000000000",
   
   // Social links
   social: {

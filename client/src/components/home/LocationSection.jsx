@@ -46,41 +46,44 @@ export default function LocationSection() {
               </div>
 
               {/* Contact Options */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
-                <a
-                  href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
-                  className="p-3 bg-white rounded-xl border border-cream-200 hover:border-crimson-700 flex items-center gap-2.5 transition-colors"
-                >
-                  <Phone className="w-4 h-4 text-crimson-800" />
-                  <div>
-                    <p className="text-[11px] text-ink-400 uppercase font-semibold">Call Primary</p>
-                    <p className="font-bold text-ink-900 text-xs truncate">{BUSINESS_CONFIG.phone}</p>
-                  </div>
-                </a>
+              <div className="space-y-1.5 pt-1">
+                <p className="text-xs font-semibold text-ink-700">For detail enquiry contact:</p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <a
+                    href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
+                    className="p-3 bg-white rounded-xl border border-cream-200 hover:border-crimson-700 flex items-center gap-2.5 transition-colors"
+                  >
+                    <Phone className="w-4 h-4 text-crimson-800" />
+                    <div>
+                      <p className="text-[11px] text-ink-400 uppercase font-semibold">Primary Contact</p>
+                      <p className="font-bold text-ink-900 text-xs truncate">{BUSINESS_CONFIG.primaryPhoneNum}</p>
+                    </div>
+                  </a>
 
-                <a
-                  href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
-                  className="p-3 bg-white rounded-xl border border-cream-200 hover:border-crimson-700 flex items-center gap-2.5 transition-colors"
-                >
-                  <Phone className="w-4 h-4 text-crimson-800" />
-                  <div>
-                    <p className="text-[11px] text-ink-400 uppercase font-semibold">Call Alternate</p>
-                    <p className="font-bold text-ink-900 text-xs truncate">{BUSINESS_CONFIG.phoneSecondary}</p>
-                  </div>
-                </a>
+                  <a
+                    href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
+                    className="p-3 bg-white rounded-xl border border-cream-200 hover:border-crimson-700 flex items-center gap-2.5 transition-colors"
+                  >
+                    <Phone className="w-4 h-4 text-crimson-800" />
+                    <div>
+                      <p className="text-[11px] text-ink-400 uppercase font-semibold">Alternate Contact</p>
+                      <p className="font-bold text-ink-900 text-xs truncate">{BUSINESS_CONFIG.secondaryPhoneNum}</p>
+                    </div>
+                  </a>
 
-                <a
-                  href={BUSINESS_CONFIG.createWhatsAppLink()}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 bg-white rounded-xl border border-cream-200 hover:border-whatsapp flex items-center gap-2.5 transition-colors"
-                >
-                  <MessageCircle className="w-4 h-4 text-whatsapp fill-whatsapp" />
-                  <div>
-                    <p className="text-[11px] text-ink-400 uppercase font-semibold">WhatsApp</p>
-                    <p className="font-bold text-ink-900 text-xs">Chat with Staff</p>
-                  </div>
-                </a>
+                  <a
+                    href={BUSINESS_CONFIG.createWhatsAppLink()}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-white rounded-xl border border-cream-200 hover:border-whatsapp flex items-center gap-2.5 transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4 text-whatsapp fill-whatsapp" />
+                    <div>
+                      <p className="text-[11px] text-ink-400 uppercase font-semibold">WhatsApp</p>
+                      <p className="font-bold text-ink-900 text-xs">Chat with Staff</p>
+                    </div>
+                  </a>
+                </div>
               </div>
 
             </div>

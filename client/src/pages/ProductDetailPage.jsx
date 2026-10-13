@@ -195,11 +195,46 @@ export default function ProductDetailPage() {
 
               <a
                 href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
-                className="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-cream-300 bg-white hover:bg-cream-50 text-ink-800 text-sm font-bold flex items-center justify-center gap-2 transition-colors"
+                className="w-full sm:w-auto py-3.5 px-4 rounded-xl border border-cream-300 bg-white hover:bg-cream-50 text-ink-800 text-xs font-bold flex items-center justify-center gap-2 transition-colors"
+                title={`Call ${BUSINESS_CONFIG.primaryPhoneNum}`}
               >
                 <Phone className="w-4 h-4 text-crimson-800" />
-                <span>Call Shop</span>
+                <span>Call {BUSINESS_CONFIG.primaryPhoneNum}</span>
               </a>
+
+              <a
+                href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
+                className="w-full sm:w-auto py-3.5 px-4 rounded-xl border border-cream-300 bg-white hover:bg-cream-50 text-ink-800 text-xs font-bold flex items-center justify-center gap-2 transition-colors"
+                title={`Call ${BUSINESS_CONFIG.secondaryPhoneNum}`}
+              >
+                <Phone className="w-4 h-4 text-crimson-800" />
+                <span>Call {BUSINESS_CONFIG.secondaryPhoneNum}</span>
+              </a>
+            </div>
+
+            {/* Detail Enquiry Card */}
+            <div className="p-3.5 rounded-xl bg-crimson-50/70 border border-crimson-200/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2.5">
+              <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-crimson-800 shrink-0" />
+                <span className="text-xs font-semibold text-ink-900">
+                  For detail enquiry contact:
+                </span>
+              </div>
+              <div className="flex items-center gap-2 text-xs font-bold">
+                <a
+                  href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
+                  className="px-2.5 py-1 rounded-lg bg-white border border-crimson-200 text-crimson-900 hover:bg-crimson-100 transition-colors"
+                >
+                  {BUSINESS_CONFIG.primaryPhoneNum}
+                </a>
+                <span className="text-crimson-300">,</span>
+                <a
+                  href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
+                  className="px-2.5 py-1 rounded-lg bg-white border border-crimson-200 text-crimson-900 hover:bg-crimson-100 transition-colors"
+                >
+                  {BUSINESS_CONFIG.secondaryPhoneNum}
+                </a>
+              </div>
             </div>
 
             {/* In-Store Counter Advice Box */}

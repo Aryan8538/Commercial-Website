@@ -54,6 +54,18 @@ export default function HeroBanner() {
               </a>
             </div>
 
+            {/* Quick Contact & Detail Enquiry Note */}
+            <div className="pt-1 flex items-center justify-center lg:justify-start flex-wrap gap-2 text-xs text-ink-600">
+              <span className="font-semibold text-ink-800">For detail enquiry contact:</span>
+              <a href={`tel:${BUSINESS_CONFIG.phoneRaw}`} className="font-bold text-crimson-800 hover:underline">
+                {BUSINESS_CONFIG.primaryPhoneNum}
+              </a>
+              <span className="text-cream-400">,</span>
+              <a href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`} className="font-bold text-crimson-800 hover:underline">
+                {BUSINESS_CONFIG.secondaryPhoneNum}
+              </a>
+            </div>
+
             {/* In-Store Assurance Features */}
             <div className="pt-4 flex items-center justify-center lg:justify-start gap-6 text-xs text-ink-500 font-medium">
               <div className="flex items-center gap-1.5">

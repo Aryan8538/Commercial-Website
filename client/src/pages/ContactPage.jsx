@@ -73,25 +73,28 @@ export default function ContactPage() {
                 </div>
                 <div className="space-y-2 flex-1">
                   <h3 className="font-serif font-bold text-base text-ink-900">
-                    Direct Store Contact
+                    For Detail Enquiry Contact
                   </h3>
+                  <p className="text-xs text-ink-600">
+                    For detailed enquiries, pricing, custom printing, or appointment bookings, contact us directly:
+                  </p>
                   <div className="flex flex-wrap gap-3">
                     <a
                       href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-ink-900 bg-cream-50 hover:bg-cream-100 border border-cream-200 transition-colors"
-                      title="Call primary contact"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-ink-900 bg-cream-50 hover:bg-cream-100 border border-cream-200 transition-colors shadow-sm"
+                      title="Call 9358206242"
                     >
                       <Phone className="w-3.5 h-3.5 text-crimson-800" />
-                      <span>{BUSINESS_CONFIG.phone}</span>
+                      <span>{BUSINESS_CONFIG.primaryPhoneNum}</span>
                     </a>
 
                     <a
                       href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-ink-900 bg-cream-50 hover:bg-cream-100 border border-cream-200 transition-colors"
-                      title="Call alternate contact"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold text-ink-900 bg-cream-50 hover:bg-cream-100 border border-cream-200 transition-colors shadow-sm"
+                      title="Call 9259441370"
                     >
                       <Phone className="w-3.5 h-3.5 text-crimson-800" />
-                      <span>{BUSINESS_CONFIG.phoneSecondary}</span>
+                      <span>{BUSINESS_CONFIG.secondaryPhoneNum}</span>
                     </a>
 
                     <a

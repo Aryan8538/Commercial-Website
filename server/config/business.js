@@ -17,9 +17,12 @@ export const BUSINESS_CONFIG = {
   phoneRaw: "+919358206242",
   phoneSecondary: "+91 92594 41370",
   phoneSecondaryRaw: "+919259441370",
+  primaryPhoneNum: "9358206242",
+  secondaryPhoneNum: "9259441370",
+  enquiryNotice: "For detail enquiry contact: 9358206242, 9259441370",
   phones: [
-    { display: "+91 93582 06242", raw: "+919358206242" },
-    { display: "+91 92594 41370", raw: "+919259441370" }
+    { display: "+91 93582 06242", raw: "+919358206242", simple: "9358206242" },
+    { display: "+91 92594 41370", raw: "+919259441370", simple: "9259441370" }
   ],
   whatsapp: "919358206242",
   email: "orders@kumarprintersandcards.example.com",

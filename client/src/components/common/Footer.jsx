@@ -89,7 +89,7 @@ export default function Footer() {
           {/* Physical Address & Contact */}
           <div className="space-y-3">
             <h3 className="font-serif font-semibold text-gold-200 text-sm tracking-wide uppercase">
-              Physical Location
+              Location & Enquiries
             </h3>
             <div className="space-y-2.5 text-xs sm:text-sm text-cream-300/80">
               <div className="flex items-start gap-2">
@@ -98,14 +98,17 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <Phone className="w-4 h-4 text-gold-400 shrink-0 mt-0.5" />
-                <div className="flex flex-wrap gap-x-2 gap-y-0.5">
-                  <a href={`tel:${BUSINESS_CONFIG.phoneRaw}`} className="hover:text-gold-300 underline underline-offset-2">
-                    {BUSINESS_CONFIG.phone}
-                  </a>
-                  <span className="text-cream-500">|</span>
-                  <a href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`} className="hover:text-gold-300 underline underline-offset-2">
-                    {BUSINESS_CONFIG.phoneSecondary}
-                  </a>
+                <div className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-2">
+                  <span className="text-[11px] text-cream-400">For detail enquiry contact:</span>
+                  <div className="flex items-center gap-2">
+                    <a href={`tel:${BUSINESS_CONFIG.phoneRaw}`} className="hover:text-gold-300 font-bold text-white underline underline-offset-2">
+                      {BUSINESS_CONFIG.primaryPhoneNum}
+                    </a>
+                    <span className="text-cream-500">,</span>
+                    <a href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`} className="hover:text-gold-300 font-bold text-white underline underline-offset-2">
+                      {BUSINESS_CONFIG.secondaryPhoneNum}
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

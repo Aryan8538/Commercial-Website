@@ -100,6 +100,27 @@ export default function MobileNav({ isOpen, onClose, navLinks }) {
 
         {/* Drawer Bottom Actions */}
         <div className="p-4 border-t border-cream-200 bg-cream-100/60 space-y-2.5">
+          <p className="text-[11px] uppercase tracking-wider font-bold text-crimson-800 text-center">
+            For Detail Enquiry Contact
+          </p>
+
+          <div className="grid grid-cols-2 gap-2">
+            <a
+              href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
+              className="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-xs font-bold text-ink-800 bg-white border border-cream-300 hover:bg-cream-50 transition-colors shadow-sm"
+            >
+              <Phone className="w-3.5 h-3.5 text-crimson-700" />
+              <span>{BUSINESS_CONFIG.primaryPhoneNum}</span>
+            </a>
+            <a
+              href={`tel:${BUSINESS_CONFIG.phoneSecondaryRaw}`}
+              className="flex items-center justify-center gap-1.5 py-2.5 px-2 rounded-xl text-xs font-bold text-ink-800 bg-white border border-cream-300 hover:bg-cream-50 transition-colors shadow-sm"
+            >
+              <Phone className="w-3.5 h-3.5 text-crimson-700" />
+              <span>{BUSINESS_CONFIG.secondaryPhoneNum}</span>
+            </a>
+          </div>
+
           <a
             href={BUSINESS_CONFIG.createWhatsAppLink()}
             target="_blank"
@@ -108,14 +129,6 @@ export default function MobileNav({ isOpen, onClose, navLinks }) {
           >
             <MessageCircle className="w-4 h-4 fill-current" />
             <span>Chat on WhatsApp</span>
-          </a>
-
-          <a
-            href={`tel:${BUSINESS_CONFIG.phoneRaw}`}
-            className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-sm font-semibold text-ink-800 bg-white border border-cream-300 hover:bg-cream-50 transition-colors"
-          >
-            <Phone className="w-4 h-4 text-crimson-700" />
-            <span>Call Shop ({BUSINESS_CONFIG.phone})</span>
           </a>
         </div>
 

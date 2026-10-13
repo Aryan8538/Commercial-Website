@@ -9,7 +9,7 @@ export const CATEGORIES = [
     slug: "shagun-lifafe",
     description: "Traditional auspicious cash gift envelopes with sacred emblems, foil borders, and auspicious motifs for blessings.",
     image: "/images/lifafe/royal-elephant-crimson-mandap-lifafa.jpg",
-    productCount: 6,
+    productCount: 7,
     isActive: true
   },
   {
@@ -17,8 +17,8 @@ export const CATEGORIES = [
     name: "Designer Lifafe",
     slug: "designer-lifafe",
     description: "Modern luxury envelopes crafted with velvet touch, metallic foils, intricate laser cutting, and premium textures.",
-    image: "/images/lifafe/vibrant-floral-garden-frame-lifafa.jpg",
-    productCount: 5,
+    image: "/images/lifafe/embossed-gold-botanical-leaf-lifafa.jpg",
+    productCount: 6,
     isActive: true
   },
   {
@@ -107,6 +107,64 @@ export const PRODUCTS = [
     isFeatured: true,
     isAvailable: true,
     createdAt: "2026-01-12T10:00:00Z",
+    updatedAt: "2026-03-15T12:00:00Z"
+  },
+  {
+    id: "SL-016",
+    name: "Embossed Gold Foliage Botanical Shagun Lifafa",
+    slug: "embossed-gold-foliage-botanical-shagun-lifafa-sl016",
+    productType: "Lifafa",
+    categoryId: "designer-lifafe",
+    description: "Refined minimalist luxury cash envelope crafted on pristine pearl shimmer board. Embellished with an intricate, raised three-dimensional embossed metallic gold foil foliage branch with delicate leaf veins and berry sprigs on the right, leaving an elegant left area ideal for personalized family names or auspicious wedding blessings.",
+    priceMin: 18,
+    priceMax: 28,
+    currency: "INR",
+    priceUnit: "piece",
+    images: [
+      "/images/lifafe/embossed-gold-botanical-leaf-lifafa.jpg"
+    ],
+    thumbnail: "/images/lifafe/embossed-gold-botanical-leaf-lifafa.jpg",
+    color: "White",
+    colors: ["White", "Golden", "Ivory"],
+    style: "Luxury",
+    material: "320 GSM Premium Pearl Metallic Shimmer Board with Raised Foil Relief",
+    size: "7.5 x 3.5 inches (Full unfolded Indian currency notes)",
+    minimumOrderQuantity: 25,
+    customizationAvailable: true,
+    customizationNotes: "Personalized bride-groom names or monogram hot-foil stamping available.",
+    tags: ["gold foliage", "botanical", "leaf", "embossed", "designer lifafa", "pearl", "shimmer", "wedding envelope", "luxury"],
+    isFeatured: true,
+    isAvailable: true,
+    createdAt: "2026-01-14T10:00:00Z",
+    updatedAt: "2026-03-15T12:00:00Z"
+  },
+  {
+    id: "SL-017",
+    name: "Royal Twin Paisley Kalka & Floral Canopy Shagun Lifafa",
+    slug: "royal-twin-paisley-kalka-floral-canopy-shagun-lifafa-sl017",
+    productType: "Lifafa",
+    categoryId: "shagun-lifafe",
+    description: "Festive Shagun cash envelope featuring an enchanting pastel floral garland canopy along the upper edge, flanked by symmetrical royal paisley (Kalka / Ambi) medallions crafted with shimmering gold foil borders and multi-colored jewel-enamel floral accents. Open central space for couple names or warm wedding blessings.",
+    priceMin: 16,
+    priceMax: 26,
+    currency: "INR",
+    priceUnit: "piece",
+    images: [
+      "/images/lifafe/royal-paisley-kalka-floral-garland-lifafa.jpg"
+    ],
+    thumbnail: "/images/lifafe/royal-paisley-kalka-floral-garland-lifafa.jpg",
+    color: "Multicolor",
+    colors: ["Pink", "Golden", "Multicolor", "Ivory"],
+    style: "Traditional",
+    material: "350 GSM Gloss Laminated Heavy Art Board with Multi-Color Enamel Foil",
+    size: "7.5 x 3.5 inches (Full unfolded Indian currency notes)",
+    minimumOrderQuantity: 25,
+    customizationAvailable: true,
+    customizationNotes: "Custom foil printing available for family gotra and wedding details.",
+    tags: ["paisley", "kalka", "ambi", "floral garland", "shagun lifafa", "traditional", "wedding", "sagan", "multicolor"],
+    isFeatured: true,
+    isAvailable: true,
+    createdAt: "2026-01-14T12:00:00Z",
     updatedAt: "2026-03-15T12:00:00Z"
   },
   {

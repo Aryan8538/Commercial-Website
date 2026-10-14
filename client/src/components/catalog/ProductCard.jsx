@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { MessageCircle, ArrowRight, Sparkles } from 'lucide-react';
+import { MessageCircle, ArrowRight, Sparkles, Flame } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 import Badge from '../common/Badge';
 
@@ -22,15 +22,22 @@ export default function ProductCard({ product }) {
           className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out"
         />
 
-        {/* Featured Ribbon Badge */}
-        {product.isFeatured && (
+        {/* Ribbon Badge: Best Seller takes priority with Flame icon, or Featured */}
+        {product.isBestSeller ? (
+          <div className="absolute top-2.5 left-2.5 z-10">
+            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-extrabold tracking-wider uppercase bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-md border border-amber-300/50">
+              <Flame className="w-2.5 h-2.5 fill-current text-amber-100" />
+              <span>Best Seller</span>
+            </span>
+          </div>
+        ) : product.isFeatured ? (
           <div className="absolute top-2.5 left-2.5 z-10">
             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold tracking-wider uppercase bg-crimson-800 text-gold-300 shadow-sm border border-gold-400/30">
               <Sparkles className="w-2.5 h-2.5" />
               <span>Featured</span>
             </span>
           </div>
-        )}
+        ) : null}
 
         {/* SKU Badge */}
         <div className="absolute bottom-2.5 left-2.5 z-10">

@@ -145,8 +145,13 @@ function filterLocalProducts(params = {}) {
   } else if (params.sort === 'sku') {
     list.sort((a, b) => a.id.localeCompare(b.id));
   } else {
-    // Featured first
-    list.sort((a, b) => (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0));
+    // Best Sellers & Featured first
+    list.sort((a, b) => {
+      if (b.isBestSeller !== a.isBestSeller) {
+        return (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0);
+      }
+      return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);
+    });
   }
 
   return {

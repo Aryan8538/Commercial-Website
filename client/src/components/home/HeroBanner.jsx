@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, MessageCircle, Sparkles } from 'lucide-react';
+import { ArrowRight, MessageCircle, Sparkles, Flame } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
 
 export default function HeroBanner() {
@@ -17,9 +17,22 @@ export default function HeroBanner() {
           <div className="lg:col-span-7 space-y-5 text-center lg:text-left">
             
             {/* Top Badges */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-gold-300 shadow-sm text-xs font-semibold text-crimson-900">
-              <Sparkles className="w-3.5 h-3.5 text-gold-600" />
-              <span>Handcrafted Shagun Lifafe & Stationery</span>
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-gold-300 shadow-sm text-xs font-semibold text-crimson-900">
+                <Sparkles className="w-3.5 h-3.5 text-gold-600" />
+                <span>Handcrafted Shagun Lifafe & Stationery</span>
+              </div>
+              <a
+                href="#bestsellers"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('bestsellers')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white shadow-sm text-xs font-bold transition-all cursor-pointer"
+              >
+                <Flame className="w-3.5 h-3.5 fill-current text-white" />
+                <span>5 New Best Sellers Added</span>
+              </a>
             </div>
 
             {/* Main Headline */}

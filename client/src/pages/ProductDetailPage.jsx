@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MessageCircle, Phone, Sparkles, MapPin, Share2, Check } from 'lucide-react';
+import { ArrowLeft, MessageCircle, Phone, Sparkles, MapPin, Share2, Check, Flame } from 'lucide-react';
 import api from '../services/api';
 import { BUSINESS_CONFIG } from '../config/business';
 import ProductGallery from '../components/product/ProductGallery';
@@ -140,7 +140,13 @@ export default function ProductDetailPage() {
                 <Badge variant="crimson">
                   {product.productType}
                 </Badge>
-                {product.isFeatured && (
+                {product.isBestSeller && (
+                  <Badge variant="bestseller" className="inline-flex items-center gap-1">
+                    <Flame className="w-3 h-3 fill-current text-amber-700" />
+                    <span>Best Seller</span>
+                  </Badge>
+                )}
+                {product.isFeatured && !product.isBestSeller && (
                   <Badge variant="gold">
                     Featured
                   </Badge>

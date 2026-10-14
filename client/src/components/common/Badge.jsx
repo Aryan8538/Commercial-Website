@@ -6,7 +6,8 @@ export default function Badge({ children, variant = 'neutral', className = '' })
     gold: 'bg-gold-50 text-gold-700 border-gold-300/80 font-medium',
     crimson: 'bg-crimson-50 text-crimson-800 border-crimson-200 font-semibold',
     sku: 'bg-ink-800 text-gold-300 border-ink-900 font-mono tracking-wider font-bold',
-    success: 'bg-emerald-50 text-emerald-800 border-emerald-200'
+    success: 'bg-emerald-50 text-emerald-800 border-emerald-200',
+    bestseller: 'bg-amber-100 text-amber-900 border-amber-300 font-bold'
   };
 
   return (

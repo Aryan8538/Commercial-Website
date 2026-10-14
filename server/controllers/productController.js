@@ -54,7 +54,12 @@ export const getProducts = (req, res) => {
     } else if (sort === 'sku') {
       list.sort((a, b) => a.id.localeCompare(b.id));
     } else {
-      list.sort((a, b) => (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0));
+      list.sort((a, b) => {
+        if (b.isBestSeller !== a.isBestSeller) {
+          return (b.isBestSeller ? 1 : 0) - (a.isBestSeller ? 1 : 0);
+        }
+        return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);
+      });
     }
 
     res.json({

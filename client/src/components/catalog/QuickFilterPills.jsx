@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlidersHorizontal, ArrowUpDown, X } from 'lucide-react';
+import { SlidersHorizontal, ArrowUpDown, X, Flame } from 'lucide-react';
 import { useCatalog } from '../../context/CatalogContext';
 
 export default function QuickFilterPills() {
@@ -17,7 +17,9 @@ export default function QuickFilterPills() {
     filterMeta,
     activeFiltersCount,
     setIsFilterDrawerOpen,
-    resetFilters
+    resetFilters,
+    search,
+    setSearch
   } = useCatalog();
 
   return (
@@ -45,8 +47,21 @@ export default function QuickFilterPills() {
           )}
         </button>
 
-        {/* Horizontal Category Slider */}
+        {/* Horizontal Category Slider with Best Sellers button */}
         <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-1">
+          <button
+            type="button"
+            onClick={() => setSearch(search === 'bestseller' ? '' : 'bestseller')}
+            className={`shrink-0 inline-flex items-center gap-1 px-3.5 py-1.5 rounded-full text-xs font-bold transition-all ${
+              search === 'bestseller'
+                ? 'bg-amber-500 text-white shadow-sm'
+                : 'bg-amber-50 text-amber-900 border border-amber-300 hover:bg-amber-100'
+            }`}
+          >
+            <Flame className={`w-3 h-3 ${search === 'bestseller' ? 'fill-current text-white' : 'fill-current text-amber-600'}`} />
+            <span>Best Sellers</span>
+          </button>
+
           {filterMeta.categories.map((cat) => {
             const isSelected = category === cat.id;
             return (
@@ -73,6 +88,16 @@ export default function QuickFilterPills() {
         
         {/* Active Filter Chips */}
         <div className="flex flex-wrap items-center gap-1.5">
+          {search === 'bestseller' && (
+            <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-[11px] font-bold">
+              <Flame className="w-3 h-3 fill-current text-amber-600" />
+              <span>Best Sellers</span>
+              <button type="button" onClick={() => setSearch('')}>
+                <X className="w-3 h-3 hover:text-amber-950" />
+              </button>
+            </span>
+          )}
+
           {category !== 'all' && (
             <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-crimson-50 text-crimson-800 border border-crimson-200 text-[11px] font-medium">
               <span>{filterMeta.categories.find(c => c.id === category)?.name || category}</span>

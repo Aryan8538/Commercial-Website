@@ -31,7 +31,7 @@ export default function HeroBanner() {
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white shadow-sm text-xs font-bold transition-all cursor-pointer"
               >
                 <Flame className="w-3.5 h-3.5 fill-current text-white" />
-                <span>5 New Best Sellers Added</span>
+                <span>6 New Best Sellers Added</span>
               </a>
             </div>
 

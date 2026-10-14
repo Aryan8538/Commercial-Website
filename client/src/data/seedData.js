@@ -9,7 +9,7 @@ export const CATEGORIES = [
     slug: "shagun-lifafe",
     description: "Traditional auspicious cash gift envelopes with sacred emblems, foil borders, and auspicious motifs for blessings.",
     image: "/images/lifafe/royal-elephant-crimson-mandap-lifafa.jpg",
-    productCount: 11,
+    productCount: 12,
     isActive: true
   },
   {
@@ -51,6 +51,36 @@ export const CATEGORIES = [
 ];
 
 export const PRODUCTS = [
+  {
+    id: "SL-027",
+    name: "Royal Kalpavriksha Tree of Life & Twin Peacocks Shagun Lifafa",
+    slug: "royal-kalpavriksha-tree-of-life-twin-peacocks-shagun-lifafa-sl027",
+    productType: "Lifafa",
+    categoryId: "shagun-lifafe",
+    description: "Majestic ceremonial Indian cash envelope featuring the sacred Kalpavriksha (Tree of Life) blossoming with jewel-toned flowers and perching songbirds, flanked by regal mirrored twin peacocks with magnificent emerald plumes. Symbolizes endless abundance, marital bliss, and prosperity for weddings and festive Sagan ceremonies.",
+    priceMin: 20,
+    priceMax: 32,
+    currency: "INR",
+    priceUnit: "piece",
+    images: [
+      "/images/lifafe/royal-kalpavriksha-tree-twin-peacock-lifafa.jpg"
+    ],
+    thumbnail: "/images/lifafe/royal-kalpavriksha-tree-twin-peacock-lifafa.jpg",
+    color: "Green",
+    colors: ["Sage", "Pastel Green", "Gold", "Blue", "Multi"],
+    style: "Traditional",
+    material: "350 GSM Premium Lustre Art Board with Golden Foil Embossing",
+    size: "7.5 x 3.5 inches (Full unfolded Indian currency notes)",
+    minimumOrderQuantity: 25,
+    customizationAvailable: true,
+    customizationNotes: "Gold foil bride & groom name stamping or personalized family gotra.",
+    tags: ["kalpavriksha", "tree of life", "peacock", "twin peacock", "shagun lifafa", "sage green", "wedding", "bestseller", "traditional", "lifafa"],
+    isFeatured: true,
+    isBestSeller: true,
+    isAvailable: true,
+    createdAt: "2026-03-06T10:00:00Z",
+    updatedAt: "2026-03-15T12:00:00Z"
+  },
   {
     id: "SL-022",
     name: "Royal Mayur Crest & Pastel Bloom Shagun Lifafa",

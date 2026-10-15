@@ -2,8 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, MessageCircle, Sparkles, Flame } from 'lucide-react';
 import { BUSINESS_CONFIG } from '../../config/business';
+import { PRODUCTS } from '../../data/seedData';
 
 export default function HeroBanner() {
+  const bestSellersCount = PRODUCTS.filter((p) => p.isBestSeller).length;
+
   return (
     <section className="relative overflow-hidden bg-cream-100/70 border-b border-cream-200">
       {/* Decorative Warm Ambient Glows */}
@@ -31,7 +34,7 @@ export default function HeroBanner() {
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-amber-500 hover:bg-amber-600 text-white shadow-sm text-xs font-bold transition-all cursor-pointer"
               >
                 <Flame className="w-3.5 h-3.5 fill-current text-white" />
-                <span>6 New Best Sellers Added</span>
+                <span>{bestSellersCount} Best Sellers Available</span>
               </a>
             </div>
 

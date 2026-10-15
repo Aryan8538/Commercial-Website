@@ -8,7 +8,7 @@ export default function FeaturedShowcase() {
   const [activeTab, setActiveTab] = useState('bestsellers');
 
   const bestSellers = PRODUCTS.filter((p) => p.isBestSeller);
-  const allHighlights = PRODUCTS.filter((p) => p.isFeatured).slice(0, 10);
+  const allHighlights = PRODUCTS.filter((p) => p.isFeatured).slice(0, 15);
 
   const displayedProducts = activeTab === 'bestsellers' ? bestSellers : allHighlights;
 
